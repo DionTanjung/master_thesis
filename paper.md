@@ -3,7 +3,6 @@ layout: paper
 title: Paper content
 
 ---
-<h1>Latest Posts</h1>
 <ul>
   {% for post in site.posts %}
     <li>

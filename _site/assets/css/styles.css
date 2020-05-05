@@ -2,7 +2,7 @@ body { font-family: -apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Robo
 
 .sidebar { background: #39c; width: 18%; position: fixed; transition: all 0.15s ease; height: 100%; -webkit-overflow-scrolling: touch; }
 
-.sidebar_header { border-bottom: 1px solid #67B8DE; color: #fff; font-size: 36px; font-weight: 300; height: 130px; line-height: 130px; margin-bottom: 0; text-align: center; }
+.sidebar_header { border-bottom: 1px solid #67B8DE; color: #fff; height: 200px; display: flex; align-items: center; justify-content: center; font-size: 30px; text-align: center; word-wrap: break-word; }
 
 .sidebar_nav { font-weight: bold; max-height: 100%; overflow-y: auto; }
 
@@ -21,3 +21,5 @@ body { font-family: -apple-system,BlinkMacSystemFont,San Francisco,Segoe UI,Robo
 .sidebar a:hover:not(.active) { color: white; opacity: 1; }
 
 .content { margin-left: 24%; margin-right: 5%; padding: 1px 16px; height: 100%; text-align: justify; }
+
+.home { display: flex; align-items: center; justify-content: center; font-size: 20px; text-align: center; word-wrap: break-word; margin-top: 5%; }

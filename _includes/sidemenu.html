@@ -1,7 +1,7 @@
-<nav>
+<!-- <nav>
     <ul>
         {% for item in site.data.navigation %}
-        <li><a href="{{ item.link }}" {% if page.url == item.link %}class="current" {% endif %}>{{ item.name }}</a></li>
+        <li><a href="{{ item.link }}" {% if page.url == item.link %}class="" {% endif %}>{{ item.name }}</a></li>
         {% endfor %}
         
         <nav class="paper-child">
@@ -15,4 +15,28 @@
         </nav>
 
     </ul>
+</nav> -->
+
+<header class="sidebar_header">Dion's Thesis</header>
+<nav class="sidebar_nav">
+  <div class="sidebar_nav_interior ">
+    <div class="section_header">
+      {% for item in site.data.navigation %}
+      <div class="section_item">
+        <a href="{{ item.link }}" {% assign url = "/master_thesis"| append: page.url %}{% if url == item.link %}
+          class="active" {% endif %}>{{ item.name }}</a>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="section_links">
+      {% for post in site.posts %}
+      <div class="section_item">
+        <a href="{{ post.url | relative_url}}"
+          {% assign url = "/master_thesis"| append: page.url %}{% if page.url == post.url %}class="active"
+          {% endif %}>{{ post.title }}</a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+
 </nav>

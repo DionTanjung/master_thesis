@@ -10,7 +10,7 @@ categories: bookmark
 
  One of the side effects of the forwarder mechanism is unnecessary forwarding. Unnecessary forwarding uses network resources, which prevents the transmission from the legitimate packet. Thus, leading to performance degradation. As LPWA already offers broader coverage, the forwarder mechanism is only useful in certain conditions (see figure 1). 
 
-Therefore, forwarders in LPWA should consider unnecessary forwarding if the gateway already receives the packet. To prevent this, we present an on-demand mechanism by such feedback messages like SACK acknowledgment contains all currently received packets to the relay. Therefore, relay only forward the missing packets after receiving the packets state from the network server.
+Therefore, forwarders in LPWA should consider unnecessary forwarding if the gateway already receives the packet. To prevent this, we present a feedback messages like SACK acknowledgment contains all currently received packets to the relay. Therefore, relay only forward the missing packets after receiving the packets state from the network server.
 
 <h4> 3.0.2  Reliability in uncertain wireless conditions </h4>
 
